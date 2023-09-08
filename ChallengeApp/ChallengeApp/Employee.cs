@@ -8,21 +8,24 @@ namespace ChallengeApp
 {
     public class Employee
     {
+        string name;
+        string lastName;
+        int age;
+
         private List< int >  score = new List< int >();
 
-        public Employee(string Name, string LastName, int Age, int Score)
+        public Employee(string name,string lastName,int age)
         {
-            this.Name = Name;
-            this.LastName = LastName;
-            this.Age = Age;
-            this.Score = Score;
+            this.name = name;
+            this.lastName = lastName;
+            this.age = age;
         }
 
         
-        public string Name {get;set;}
+        public string Name {get; set; }
         public string LastName {get;set;}
         public int Age {get; set;}
-        public int Score {get; set;}
+        public int Score {get;}
         public int Result 
         {
             get 
@@ -31,10 +34,9 @@ namespace ChallengeApp
             }
         }
 
-        public void AddScore(int Score) 
+        public void AddScore(int score) 
         { 
-            this.score.Add(Score);
+            this.score.Add(score);
         }
-
     }
 }
