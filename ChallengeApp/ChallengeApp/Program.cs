@@ -11,32 +11,32 @@ namespace ChallengeApp
             string lastName = null;
             int age = 0;
             int score = 0;
-            Employee1 employee1 = new Employee1(name, lastName, age, score);
-            Employee2 employee2 = new Employee2(name, lastName, age, score);
-            Employee3 employee3 = new Employee3(name, lastName, age, score);
+            Employee employee1 = new Employee(name, lastName, age, score);
 
             employee1.Name = "Alina";
             employee1.LastName = "Abacka";
             employee1.Age = 24;
             employee1.AddScore(8);
             employee1.AddScore(1);
-            employee1.AddScore(6);
+            employee1.AddScore(2);
             int result1 = employee1.Result;
 
+            Employee employee2 = new Employee(name, lastName, age, score);
             employee2.Name = "Bartosz";
             employee2.LastName = "Babacki";
             employee2.Age = 32;
             employee2.AddScore(9);
             employee2.AddScore(4);
-            employee2.AddScore(4);
+            employee2.AddScore(2);
             int result2 = employee2.Result;
 
+            Employee employee3 = new Employee(name, lastName, age, score);
             employee3.Name = "Celina";
             employee3.LastName = "Cacacka";
             employee3.Age = 29;
             employee3.AddScore(8);
-            employee3.AddScore(4);
-            employee3.AddScore(2);
+            employee3.AddScore(7);
+            employee3.AddScore(3);
             int result3 = employee3.Result;
 
 

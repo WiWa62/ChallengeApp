@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ChallengeApp
 {
-    public class Employee1
+    public class Employee
     {
         private List< int >  score = new List< int >();
 
-        public Employee1(string Name, string LastName, int Age, int Score)
+        public Employee(string Name, string LastName, int Age, int Score)
         {
             this.Name = Name;
             this.LastName = LastName;
