@@ -8,11 +8,12 @@ namespace ChallengeApp
 {
     public class Employee
     {
-        string name;
-        string lastName;
-        int age;
+        public List< int >  score = new ();
 
-        private List< int >  score = new List< int >();
+        public string name;
+        public string lastName;
+        public int age;
+
 
         public Employee(string name,string lastName,int age)
         {
@@ -20,13 +21,7 @@ namespace ChallengeApp
             this.lastName = lastName;
             this.age = age;
         }
-
-        
-        public string Name {get; set; }
-        public string LastName {get;set;}
-        public int Age {get; set;}
-        public int Score {get;}
-        public int Result 
+        public int Result
         {
             get 
             { 
