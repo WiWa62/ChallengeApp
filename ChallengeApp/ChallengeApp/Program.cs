@@ -7,17 +7,26 @@ namespace ChallengeApp
     {
         static void Main(string[] args)
         {
-            Employee employee1 = new ("Alina","Abacka", 21);
+            Employee employee1 = new();
+            employee1.Name = "Alina";
+            employee1.LastName = "Abacka";
+            employee1.Age = 21;
             employee1.AddScore(9);
             employee1.AddScore(6);
-            employee1.AddScore(1);
+            employee1.AddScore(9);
             
-            Employee employee2 = new ("Bartosz","Babacki",24);
+            Employee employee2 = new();
+            employee2.Name = "Bartosz";
+            employee2.LastName = "Babacki";
+            employee2.Age = 24;
             employee2.AddScore(7);
-            employee2.AddScore(3);
+            employee2.AddScore(9);
             employee2.AddScore(8);
             
-            Employee employee3 = new ("Celina","Cacacka",29);
+            Employee employee3 = new();
+            employee3.Name = "Celina";
+            employee3.LastName = "Cacacka";
+            employee3.Age = 29;
             employee3.AddScore(8);
             employee3.AddScore(7);
             employee3.AddScore(6);
@@ -36,8 +45,8 @@ namespace ChallengeApp
                 }
             }
 
-            Console.WriteLine($"Najwyższy wynik {employeeWithMaxResult.Result} pkt zdobywa {employeeWithMaxResult.name}"
-                + " " + $"{employeeWithMaxResult.lastName}" + $"({employeeWithMaxResult.age} lat/a)");
+            Console.WriteLine($"Najwyższy wynik {employeeWithMaxResult.Result} pkt zdobywa {employeeWithMaxResult.Name}"
+                + " " + $"{employeeWithMaxResult.LastName}" + " " + $"({employeeWithMaxResult.Age} lat/a)");
         }  
     }
 }
