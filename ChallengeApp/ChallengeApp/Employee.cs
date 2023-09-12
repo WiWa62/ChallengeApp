@@ -9,11 +9,12 @@ namespace ChallengeApp
     public class Employee
     {
         public List<int> score = new();
-        public Employee()
+
+        public Employee(string Name, string LastName, int Age)
         {
-            Name = "";
-            LastName = "";
-            Age = 0;
+            this.Name = Name;
+            this.LastName = LastName;
+            this.Age = Age;
         }
         public string Name { get; set; }
         public string LastName { get; set; }
